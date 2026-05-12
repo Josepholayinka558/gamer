@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Streamer Ella - Website Developer, Professional Streamer, and Gamer. Futuristic portfolio with 3D animations and cyberpunk aesthetic.">
+    <meta name="keywords" content="Streamer Ella, Web Developer, Gamer, Streamer, Philadelphia, Portfolio, Cyberpunk Website, 3D Animations">
+    <meta name="author" content="Streamer Ella">
+    <title>Streamer Ella | Developer • Streamer • Gamer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-text">INITIALIZING...</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-glow"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-text">ELLA</div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">STREAMER<span>ELLA</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-subtitle reveal">Website Developer • Professional Streamer • Gamer</h2>
+                    <h1 class="hero-title reveal">STREAMER <span class="glitch-text" data-text="ELLA">ELLA</span></h1>
+                    <div class="hero-btns reveal">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <div class="glowing-ring"></div>
+                        <div class="glowing-ring"></div>
+                        <img src="images/profile.png" alt="Streamer Ella" class="profile-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="bg-title">ABOUT</h2>
+                    <h3 class="section-title">Who is <span class="cyan-text">Ella?</span></h3>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card glass reveal">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Developer</h3>
+                        <p>Specializing in building immersive, high-performance web experiences with modern technologies.</p>
+                    </div>
+                    <div class="about-card glass reveal">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>UI Designer</h3>
+                        <p>Creating futuristic and intuitive user interfaces that blend aesthetics with functionality.</p>
+                    </div>
+                    <div class="about-card glass reveal">
+                        <i class="fas fa-video"></i>
+                        <h3>Professional Streamer</h3>
+                        <p>Entertaining and engaging with a global community through high-energy gaming broadcasts.</p>
+                    </div>
+                    <div class="about-card glass reveal">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Hardcore Gamer</h3>
+                        <p>Competitive spirit meets techwear aesthetic. Gaming isn't just a hobby, it's a lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="bg-title">SKILLS</h2>
+                    <h3 class="section-title">Technical <span class="cyan-text">Expertise</span></h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span>HTML5 / CSS3</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span>JavaScript (ES6+)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span>Tailwind CSS</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span>UI/UX Design</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-info">
+                            <span>Streaming & Content</span>
+                            <span>98%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="bg-title">WORK</h2>
+                    <h3 class="section-title">Featured <span class="cyan-text">Projects</span></h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <div class="project-overlay">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="placeholder-img">Gaming Website</div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Elite Gaming Hub</h4>
+                            <p>Futuristic community platform for gamers.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <div class="project-overlay">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="placeholder-img">Streaming Dashboard</div>
+                        </div>
+                        <div class="project-info">
+                            <h4>StreamFlow Analytics</h4>
+                            <p>Real-time data visualization for streamers.</p>
+                            <div class="project-tags">
+                                <span>D3.js</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <div class="project-overlay">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="placeholder-img">Modern Portfolio</div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Cyber Portfolio</h4>
+                            <p>Next-gen developer showcase template.</p>
+                            <div class="project-tags">
+                                <span>Three.js</span>
+                                <span>GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <div class="project-overlay">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="placeholder-img">Tech Landing Page</div>
+                        </div>
+                        <div class="project-info">
+                            <h4>NeoTech Solutions</h4>
+                            <p>SaaS landing page with premium animations.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>SCSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobby Section -->
+        <section id="hobbies" class="hobbies">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="bg-title">LIFE</h2>
+                    <h3 class="section-title">Beyond the <span class="cyan-text">Code</span></h3>
+                </div>
+                <div class="hobby-list">
+                    <div class="hobby-item reveal">
+                        <div class="hobby-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="hobby-text">
+                            <h4>Professional Streaming</h4>
+                            <p>Building an inclusive community and sharing high-octane gameplay every night.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-item reveal">
+                        <div class="hobby-icon"><i class="fas fa-headset"></i></div>
+                        <div class="hobby-text">
+                            <h4>Competitive Gaming</h4>
+                            <p>Mastering mechanics and strategy in FPS and RPG titles at an elite level.</p>
+                        </div>
+                    </div>
+                    <div class="hobby-item reveal">
+                        <div class="hobby-icon"><i class="fas fa-camera"></i></div>
+                        <div class="hobby-text">
+                            <h4>Content Creation</h4>
+                            <p>Producing high-quality tech and gaming content for various social platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="bg-title">HELLO</h2>
+                    <h3 class="section-title">Get in <span class="cyan-text">Touch</span></h3>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>strrella69@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Philadelphia, Pennsylvania</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitch"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form glass reveal">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">STREAMER<span>ELLA</span></a>
+                </div>
+                <p>&copy; 2026 Streamer Ella. All Rights Reserved. Designed for the Future.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
